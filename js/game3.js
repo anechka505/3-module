@@ -9,42 +9,42 @@
         {
             name: 'лумви',
             desc: 'Живёт на\u00A0луне Лум. Питается тёплым светом, любит тихо шуршать в\u00A0траве и\u00A0прятать следы.',
-            head: '../images/lumvi-head.svg',
-            body: '../images/lumvi-body.svg',
-            legs: '../images/lumvi-legs.svg',
-            full: '../images/lumvi-full.svg'
+            head: 'images/lumvi-head.svg',
+            body: 'images/lumvi-body.svg',
+            legs: 'images/lumvi-legs.svg',
+            full: 'images/lumvi-full.svg'
         },
         {
             name: 'мирсо',
             desc: 'Живёт на\u00A0планете Мир. Питается лунной росой, умеет собирать туман в\u00A0маленькие облака.',
-            head: '../images/mirso-head.svg',
-            body: '../images/mirso-body.svg',
-            legs: '../images/mirso-legs.svg',
-            full: '../images/mirso-full.svg'
+            head: 'images/mirso-head.svg',
+            body: 'images/mirso-body.svg',
+            legs: 'images/mirso-legs.svg',
+            full: 'images/mirso-full.svg'
         },
         {
             name: 'олери',
             desc: 'Живёт на\u00A0планете Олер. Питается пыльцой комет, может долго не\u00A0спать и\u00A0беречь чужой сон.',
-            head: '../images/oleri-head.svg',
-            body: '../images/oleri-body.svg',
-            legs: '../images/oleri-legs.svg',
-            full: '../images/oleri-full.svg'
+            head: 'images/oleri-head.svg',
+            body: 'images/oleri-body.svg',
+            legs: 'images/oleri-legs.svg',
+            full: 'images/oleri-full.svg'
         },
         {
             name: 'вапут',
             desc: 'Живет на\u00A0планете Вап. Питается звездными хвостами, умеет быстро затягивать озоновую дыру и\u00A0светиться',
-            head: '../images/vaput-head.svg',
-            body: '../images/vaput-body.svg',
-            legs: '../images/vaput-legs.svg',
-            full: '../images/vaput-full.svg'
+            head: 'images/vaput-head.svg',
+            body: 'images/vaput-body.svg',
+            legs: 'images/vaput-legs.svg',
+            full: 'images/vaput-full.svg'
         },
         {
             name: 'селли',
             desc: 'Живёт на\u00A0луне Сел. Питается искрами звёзд, умеет находить дорогу даже в\u00A0полной темноте.',
-            head: '../images/selli-head.svg',
-            body: '../images/selli-body.svg',
-            legs: '../images/selli-legs.svg',
-            full: '../images/selli-full.svg'
+            head: 'images/selli-head.svg',
+            body: 'images/selli-body.svg',
+            legs: 'images/selli-legs.svg',
+            full: 'images/selli-full.svg'
         }
     ];
 
