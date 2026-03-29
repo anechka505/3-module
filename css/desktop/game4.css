@@ -1,0 +1,145 @@
+
+
+.game4 {
+    width: 100%;
+    padding: 0 var(--side-padding);
+    margin: var(--section-gap) 0;
+}
+
+.game4__inner {
+    background-color: var(--yellow);
+    border-radius: var(--radius-big);
+    position: relative;
+    overflow: hidden;
+    aspect-ratio: 1196 / 782;
+    cursor: none;
+}
+
+
+.game4__hint-box {
+    position: absolute;
+    left: 3.03%;
+    top: 5.12%;
+    width: 34.03%;
+    height: 16.37%;
+    background-color: var(--dark);
+    border-radius: 3.48vw;
+    display: flex;
+    align-items: center;
+    padding: 0 3.2vw;
+    z-index: 3;
+}
+
+.game4__hint-text {
+    font-size: 1.96vw;
+    font-weight: 700;
+    color: var(--yellow);
+    line-height: 1.2;
+}
+
+
+.game4__creature-area {
+    position: absolute;
+    bottom: 0;
+    left: 24.4%;
+    width: 50.8%;
+    z-index: 1;
+}
+
+.game4__creature {
+    width: 100%;
+    position: relative;
+}
+
+.game4__creature img {
+    width: 100%;
+    display: block;
+}
+
+
+.game4__zone {
+    position: absolute;
+    cursor: none;
+    z-index: 5;
+    pointer-events: none;
+    clip-path: circle(0% at 50% 50%);
+}
+
+.game4__zone img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.game4__zone[data-microbe="enibus"] {
+    top: 73.86%;
+    left: 4.34%;
+    width: 20.89%;
+    height: 19.10%;
+}
+
+.game4__zone[data-microbe="beribus"] {
+    top: 46.58%;
+    left: 10.94%;
+    width: 18.59%;
+    height: 12.63%;
+}
+
+.game4__zone[data-microbe="erobus"] {
+    top: 47.33%;
+    left: 72.27%;
+    width: 16.28%;
+    height: 13.23%;
+}
+
+.game4__zone[data-microbe="shirobus"] {
+    top: 18.75%;
+    left: 53.03%;
+    width: 15.95%;
+    height: 16.24%;
+}
+
+
+.game4__magnifier {
+    position: absolute;
+    width: 23.44vw;
+    height: 23.98vw;
+    pointer-events: none;
+    z-index: 20;
+    display: none;
+    transform: translate(-30%, -30%);
+}
+
+.game4__magnifier img {
+    width: 100%;
+}
+
+
+.game4__info {
+    position: absolute;
+    left: 76.59%;
+    top: 9.72%;
+    width: 20%;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+    text-align: left;
+}
+
+.game4__info.visible {
+    opacity: 1;
+}
+
+.game4__info-name {
+    font-size: 4.41vw;
+    font-weight: 700;
+    color: var(--dark);
+    line-height: 1;
+    margin-bottom: 0.47vw;
+}
+
+.game4__info-desc {
+    font-size: 1.3vw;
+    color: var(--dark);
+    line-height: 1.35;
+}

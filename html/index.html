@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>рбипет — Фестиваль космических животных</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/variables.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/desktop/header.css">
+    <link rel="stylesheet" href="../css/desktop/game1.css">
+    <link rel="stylesheet" href="../css/desktop/banners.css">
+    <link rel="stylesheet" href="../css/desktop/game2.css">
+    <link rel="stylesheet" href="../css/desktop/game3.css">
+    <link rel="stylesheet" href="../css/desktop/game4.css">
+    <link rel="stylesheet" href="../css/desktop/footer.css">
+    <link rel="stylesheet" href="../css/mobile/variables.css">
+    <link rel="stylesheet" href="../css/mobile/header.css">
+    <link rel="stylesheet" href="../css/mobile/footer.css">
+    <link rel="stylesheet" href="../css/mobile/banners.css">
+    <link rel="stylesheet" href="../css/mobile/game1.css">
+    <link rel="stylesheet" href="../css/mobile/game2.css">
+    <link rel="stylesheet" href="../css/mobile/game3.css">
+    <link rel="stylesheet" href="../css/mobile/game4.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="header__bar">
+            <div class="header__logo">
+                <picture>
+                    <source media="(max-width: 780px)" srcset="../images/logo-text-mobile.svg">
+                    <img src="../images/logo-text.svg">
+                </picture>
+            </div>
+            <span class="header__title">Фестиваль космических животных</span>
+            <span class="header__coords">55.753960, 37.620393</span>
+        </div>
+    </header>
+
+    <section class="game1" id="game1">
+        <div class="game1__inner">
+
+            <div class="game1__state1" id="game1-state1">
+                <div class="game1__hint-box">
+                    <p class="game1__hint-text">Кликни на&nbsp;все звёзды, чтобы открыть задание</p>
+                </div>
+
+
+                <div class="game1__star game1__star--1" data-star="1">
+                    <img src="../images/star.svg" >
+                </div>
+                <div class="game1__star game1__star--2" data-star="2">
+                    <img src="../images/star.svg" >
+                </div>
+                <div class="game1__star game1__star--3" data-star="3">
+                    <img src="../images/star.svg" >
+                </div>
+
+
+                <div class="game1__creature">
+                    <img src="../images/creature-game1.svg">
+                </div>
+            </div>
+
+
+
+            <div class="game1__state2" id="game1-state2">
+                <div class="game1__state2-header">
+                    <h2 class="game1__state2-title">Приручи космос</h2>
+                    <p class="game1__state2-subtitle">Соедини созвездия и&nbsp;узнай микро-животных</p>
+                </div>
+
+                <svg class="game1__constellation-lines" id="game1-lines"></svg>
+
+ 
+                <div class="game1__constellations" id="game1-constellations"></div>
+
+
+                <div class="game1__creature-result" id="result-enibus">
+                    <img src="../images/enibus.svg">
+                    <p class="game1__creature-name">Энибус</p>
+                </div>
+                <div class="game1__creature-result" id="result-beribus">
+                    <img src="../images/beribus.svg">
+                    <p class="game1__creature-name">Берибус</p>
+                </div>
+                <div class="game1__creature-result" id="result-erobus">
+                    <img src="../images/erobus.svg">
+                    <p class="game1__creature-name">Еробус</p>
+                </div>
+                <div class="game1__creature-result" id="result-shirobus">
+                    <img src="../images/shirobus.svg">
+                    <p class="game1__creature-name">Широбус</p>
+                </div>
+
+                <div class="game1__restart" id="game1-restart">
+                    <img src="../images/restart-btn.svg">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="banner banner--1">
+        <div class="banner__inner">
+            <img class="banner__logo" src="../images/logo-banner.svg">
+            <span class="banner__text">рбипет</span>
+        </div>
+    </section>
+
+
+    <section class="game2" id="game2">
+        <div class="game2__inner" id="game2-inner">
+     
+            <div class="game2__left">
+                <p class="game2__hint-text">Разложи космозверей по&nbsp;капсулам отправки домой. Помни, каждый зверь живёт на&nbsp;своём слое</p>
+            </div>
+
+ 
+            <div class="game2__right"></div>
+
+      
+            <svg class="game2__bg" viewBox="0 0 1196 755">
+                <defs>
+                    <clipPath id="planet-right"><rect x="896.73" y="0" width="300" height="755"/></clipPath>
+                    <clipPath id="planet-left"><rect x="597" y="0" width="300" height="755"/></clipPath>
+                </defs>
+ 
+                <circle cx="896.73" cy="382.03" r="244" fill="var(--pink)" clip-path="url(#planet-right)"/>
+                <circle cx="896.73" cy="382.03" r="244" fill="var(--cyan)" clip-path="url(#planet-left)"/>
+                <circle cx="896.73" cy="382.03" r="170.8" fill="var(--pink)" clip-path="url(#planet-left)"/>
+                <circle cx="896.73" cy="382.03" r="90.78" fill="var(--yellow)" clip-path="url(#planet-left)"/>
+
+                <path d="M881.824 170.314V110.751H584.762" stroke="var(--cyan)" stroke-width="9.156" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                <path d="M795.207 388.336L779.268 387.949L762.372 387.539L558.987 382.603" stroke="var(--pink)" stroke-width="9.156" stroke-linecap="round" fill="none"/>
+                <path d="M855.75 421.705V637.797H549.889" stroke="var(--yellow)" stroke-width="9.156" stroke-linejoin="round" fill="none"/>
+            </svg>
+
+     
+            <div class="game2__receiver game2__receiver--pink" data-type="pink">
+                <img src="../images/receiver-pink.svg">
+            </div>
+            <div class="game2__receiver game2__receiver--yellow" data-type="yellow">
+                <img src="../images/receiver-yellow.svg">
+            </div>
+            <div class="game2__receiver game2__receiver--pinkdot" data-type="pinkdot">
+                <img src="../images/receiver-pinkdot.svg">
+            </div>
+
+ 
+            <svg class="game2__arrow game2__arrow--desktop" viewBox="0 0 1196 755" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+                <g transform="translate(320,100)">
+                    <path d="M3.76785 93.5599C77.7435 135.463 119.667 142.168 206.847 72.1882" stroke="#55D9FF" stroke-width="7.4824" stroke-linecap="round" fill="none"/>
+                    <path d="M172.14 60.998L211.146 68.6382L203.599 107.728" stroke="#55D9FF" stroke-width="7.4824" stroke-linecap="round" fill="none"/>
+                </g>
+            </svg>
+            <svg class="game2__arrow game2__arrow--mobile" viewBox="0 0 370 654" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+                <g transform="translate(278,245)">
+                    <path d="M60.8482 1.69088C69.9999 38.6507 67.8357 57.5412 27.139 86.7033" stroke="#55D9FF" stroke-width="3.351" stroke-linecap="round" fill="none"/>
+                    <path d="M26.5046 70.382L25.0957 88.127L42.8658 89.5863" stroke="#55D9FF" stroke-width="3.351" stroke-linecap="round" fill="none"/>
+                </g>
+            </svg>
+
+            <div id="game2-capsules"></div>
+
+            <div class="game2__success" id="game2-success">Супер!</div>
+
+            <div class="game2__restart" id="game2-restart">
+                <img src="../images/restart-btn.svg">
+            </div>
+        </div>
+    </section>
+
+
+    <section class="banner banner--2">
+        <div class="banner__inner">
+            <span class="banner__text">макромир</span>
+        </div>
+    </section>
+
+
+    <section class="game3" id="game3">
+        <div class="game3__inner">
+            <div class="game3__hint-box">
+                <p class="game3__hint-text">Нажми на&nbsp;рычаг, чтобы&nbsp;собрать животное и&nbsp;узнать о&nbsp;нём больше</p>
+            </div>
+
+            <div class="game3__lever-area">
+                <div class="game3__lever" id="game3-lever">
+                    <div class="game3__lever-arm">
+                        <div class="game3__lever-ball"></div>
+                    </div>
+                    <div class="game3__lever-base"></div>
+                </div>
+            </div>
+
+            <div class="game3__capsule-area">
+                <div class="game3__capsule-img">
+                    <img src="../images/slot-capsule.svg">
+                    <div class="game3__slot-window game3__slot-window--head" id="slot-head">
+                        <span class="game3__slot-question">?</span>
+                    </div>
+                    <div class="game3__slot-window game3__slot-window--body" id="slot-body">
+                        <span class="game3__slot-question">?</span>
+                    </div>
+                    <div class="game3__slot-window game3__slot-window--legs" id="slot-legs">
+                        <span class="game3__slot-question">?</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="game3__right" id="game3-right">
+                <div class="game3__smiley" id="game3-smiley">
+                    <div class="game3__smiley-eye"></div>
+                    <div class="game3__smiley-eye"></div>
+                    <svg class="game3__smiley-mouth" viewBox="-6 -6 205 68" fill="none">
+                        <path d="M0 0C0 0 25.458 56 97.057 56C168.656 56 193 0 193 0" stroke="#4B4B4B" stroke-width="10.05" stroke-linecap="round"/>
+                    </svg>
+                </div>
+                <div class="game3__creature" id="game3-creature">
+                    <img id="game3-creature-img" src="">
+                </div>
+                <div class="game3__text-area">
+                    <p class="game3__name" id="game3-creature-name">хмм...</p>
+                    <p class="game3__desc" id="game3-creature-desc">Какой-то зверь ждет знакомства с&nbsp;тобой! Скорее узнавай животных фестиваля и&nbsp;начинайте дружить</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="banner banner--3">
+        <div class="banner__inner">
+            <span class="banner__text">микромир</span>
+        </div>
+    </section>
+
+
+    <section class="game4" id="game4">
+        <div class="game4__inner" id="game4-inner">
+            <div class="game4__hint-box">
+                <p class="game4__hint-text">Используй лупу, чтобы&nbsp;рассмотреть,<br>кто&nbsp;живёт на&nbsp;Пухляше</p>
+            </div>
+
+            <div class="game4__creature-area">
+                <div class="game4__creature" id="game4-creature">
+                    <img src="../images/pukhlyash.svg">
+
+                    <div class="game4__zone" data-microbe="enibus">
+                        <img src="../images/microbe-enibus.svg">
+                    </div>
+                    <div class="game4__zone" data-microbe="beribus">
+                        <img src="../images/microbe-beribus.svg">
+                    </div>
+                    <div class="game4__zone" data-microbe="erobus">
+                        <img src="../images/microbe-erobus.svg">
+                    </div>
+                    <div class="game4__zone" data-microbe="shirobus">
+                        <img src="../images/microbe-shirobus.svg">
+                    </div>
+                </div>
+            </div>
+
+     
+            <div class="game4__info" id="game4-info">
+                <p class="game4__info-name" id="game4-info-name"></p>
+                <p class="game4__info-desc" id="game4-info-desc"></p>
+            </div>
+
+      
+            <div class="game4__magnifier" id="game4-magnifier">
+                <img src="../images/magnifier.svg">
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="footer">
+        <div class="footer__bar">
+            <span class="footer__text">Сафонова Анна</span>
+            <span class="footer__text">Дизайн и&nbsp;продвижениего</span>
+            <span class="footer__text">Куратор: Умнова Екатерина</span>
+        </div>
+    </footer>
+
+    <script src="../js/game1.js"></script>
+    <script src="../js/game2.js"></script>
+    <script src="../js/game3.js"></script>
+    <script src="../js/game4.js"></script>
+</body>
+</html>

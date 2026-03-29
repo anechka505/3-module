@@ -1,0 +1,23 @@
+
+.footer {
+    width: 100%;
+    padding: 0 var(--side-padding);
+    padding-bottom: var(--section-gap);
+    margin-top: var(--section-gap);
+}
+
+.footer__bar {
+    background-color: var(--pink);
+    border-radius: var(--radius-footer);
+    height: 4.91vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2.5vw;
+}
+
+.footer__text {
+    font-size: 1.64vw;
+    font-weight: 700;
+    color: var(--white);
+}

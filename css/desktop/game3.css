@@ -1,0 +1,288 @@
+
+.game3 {
+    width: 100%;
+    padding: 0 var(--side-padding);
+    margin: var(--section-gap) 0;
+}
+
+.game3__inner {
+    width: 100%;
+    background-color: var(--pink);
+    border-radius: var(--radius-big);
+    position: relative;
+    overflow: hidden;
+    aspect-ratio: 1196 / 782;
+}
+
+
+.game3__hint-box {
+    position: absolute;
+    left: 3.03%;
+    top: 5.12%;
+    width: 34.03%;
+    height: 16.37%;
+    background-color: var(--dark);
+    border-radius: 3.48vw;
+    display: flex;
+    align-items: center;
+    padding: 0 2.5vw;
+    z-index: 2;
+}
+
+.game3__hint-text {
+    font-size: 1.96vw;
+    font-weight: 700;
+    color: var(--pink);
+    line-height: 1.2;
+}
+
+
+.game3__lever-area {
+    position: absolute;
+    left: 6.27%;
+    top: 49.78%;
+    width: 18.48%;
+    height: 41.82%;
+    z-index: 2;
+}
+
+.game3__lever {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    position: relative;
+}
+
+
+.game3__lever-arm {
+    position: absolute;
+    left: 49.43%;
+    top: 0;
+    bottom: 1.15%;
+    width: 0.58vw;
+    transform-origin: bottom center;
+    transition: transform 0.4s ease;
+}
+
+
+.game3__lever-arm::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 29%;
+    bottom: 0;
+    width: 100%;
+    background-color: var(--cyan);
+}
+
+.game3__lever-ball {
+    position: absolute;
+    width: 7.53vw;
+    aspect-ratio: 1;
+    border: 0.58vw solid var(--cyan);
+    border-radius: 50%;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background: transparent;
+}
+
+
+.game3__lever-base {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0.58vw;
+    background-color: var(--cyan);
+}
+
+
+.game3__lever.pulled .game3__lever-arm {
+    transform: rotate(45deg);
+}
+
+
+.game3__capsule-area {
+    position: absolute;
+    left: 42.31%;
+    top: 5.75%;
+    width: 21.66%;
+    height: 88.87%;
+    z-index: 2;
+}
+
+.game3__capsule-img {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.game3__capsule-img > img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+
+.game3__slot-window {
+    position: absolute;
+    left: 19.23%;
+    width: 61.54%;
+    height: 25.9%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.game3__slot-window--head {
+    top: 7.5%;
+}
+
+
+.game3__slot-window--body {
+    top: 39%;
+}
+
+
+.game3__slot-window--legs {
+    top: 69.5%;
+}
+
+
+.game3__drum {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    will-change: transform;
+}
+
+.game3__drum-item {
+    flex-shrink: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.game3__drum-item img {
+    width: 80%;
+    height: 80%;
+    object-fit: contain;
+}
+
+.game3__slot-window--head .game3__drum-item img[src*="selli-head"] {
+    width: 110%;
+    height: 110%;
+}
+
+.game3__slot-window--head .game3__drum-item img[src*="lumvi-head"] {
+    width: 90%;
+    height: 90%;
+}
+
+
+.game3__slot-question {
+    font-size: 15.04vw;
+    font-weight: 700;
+    color: var(--white);
+    -webkit-text-stroke: 0.23vw var(--white);
+    line-height: 1;
+}
+
+
+.game3__right {
+    position: absolute;
+    left: 68.53%;
+    top: 5.76%;
+    width: 27.87%;
+    height: 88.91%;
+    z-index: 2;
+    overflow: hidden;
+    border-radius: var(--radius-big);
+    background-color: var(--dark);
+}
+
+
+.game3__smiley {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+.game3__smiley-eye {
+    position: absolute;
+    width: 20.66%;
+    aspect-ratio: 1;
+    background-color: #4B4B4B;
+    border-radius: 50%;
+    top: 23.49%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.game3__smiley-eye:first-child {
+    left: 30.21%;
+}
+
+.game3__smiley-eye:nth-child(2) {
+    left: 69.43%;
+}
+
+
+.game3__smiley-mouth {
+    position: absolute;
+    width: 57.78%;
+    left: 20.78%;
+    top: 38.93%;
+}
+
+
+.game3__creature {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 72.72%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 3% 5%;
+}
+
+.game3__creature img {
+    width: 85%;
+    height: 85%;
+    object-fit: contain;
+}
+
+
+.game3__text-area {
+    position: absolute;
+    bottom: 5.65%;
+    left: 20.48%;
+    width: 76%;
+    text-align: left;
+}
+
+.game3__name {
+    font-size: 4.41vw;
+    font-weight: 700;
+    color: var(--white);
+    margin-bottom: 0.47vw;
+    line-height: 1;
+}
+
+.game3__desc {
+    font-size: 1.3vw;
+    font-weight: 400;
+    color: var(--white);
+    line-height: 1.35;
+}

@@ -1,0 +1,54 @@
+@media (max-width: 780px) {
+
+
+    .game4__inner {
+        aspect-ratio: 361 / 301;
+    }
+
+
+    .game4__hint-box {
+        left: 6.09%;
+        top: 4.32%;
+        width: 88.09%;
+        height: 16.28%;
+        border-radius: 3.48vw;
+        padding: 0;
+        justify-content: center;
+    }
+
+
+    .game4__hint-text {
+        font-size: 3.13vw;
+        color: var(--yellow);
+        width: 62.44vw;
+        text-align: center;
+    }
+
+
+    .game4__creature-area {
+        left: 22.44%;
+        width: 50.42%;
+    }
+
+    
+    .game4__magnifier {
+        width: 28vw;
+        height: 28.65vw;
+    }
+
+
+    .game4__info {
+        left: 70.36%;
+        top: 25.47%;
+        width: 23.27%;
+    }
+
+    .game4__info-name {
+        font-size: 4.87vw;
+    }
+
+    .game4__info-desc {
+        font-size: 1.44vw;
+    }
+
+}

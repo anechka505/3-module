@@ -1,0 +1,203 @@
+
+.game2 {
+    width: 100%;
+    padding: 0 var(--side-padding);
+    margin: var(--section-gap) 0;
+}
+
+.game2__inner {
+    position: relative;
+    aspect-ratio: 1196 / 755;
+    overflow: hidden;
+    border-radius: var(--radius-mid);
+    background-color: var(--dark);
+}
+
+
+.game2__left {
+    position: absolute;
+    left: 0.31%;
+    top: 1.16%;
+    width: 32.57%;
+    height: 98.35%;
+    background-color: rgba(255, 109, 172, 0.16);
+    border: 0.58vw solid var(--pink);
+    border-radius: var(--radius-mid);
+
+    padding: 3.09vw 3.4vw;
+    z-index: 2;
+    pointer-events: none;
+}
+
+
+.game2__hint-text {
+    font-size: 1.96vw;
+    font-weight: 700;
+    color: var(--white);
+    line-height: 1.2;
+    text-align: left;
+    width: 24.92vw;
+}
+
+
+.game2__right {
+    position: absolute;
+    left: 37.19%;
+    top: 0.50%;
+    width: 62.50%;
+    height: 98.41%;
+    border: 0.58vw solid var(--pink);
+    border-radius: var(--radius-mid);
+    z-index: 1;
+    pointer-events: none;
+}
+
+
+.game2__bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 2;
+}
+
+
+.game2__arrow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 3;
+    overflow: visible;
+}
+
+.game2__arrow--mobile {
+    display: none;
+}
+
+
+.game2__receiver {
+    position: absolute;
+    width: 7.36%;
+    z-index: 4;
+    transform: translate(-50%, -50%);
+}
+
+.game2__receiver img {
+    width: 100%;
+    display: block;
+}
+
+
+.game2__receiver--pink {
+    left: 46.76%;
+    top: 14.42%;
+}
+
+
+.game2__receiver--yellow {
+    left: 46.74%;
+    top: 50.35%;
+}
+
+
+.game2__receiver--pinkdot {
+    left: 46.74%;
+    top: 85.12%;
+}
+
+.game2__capsule {
+    position: absolute;
+    width: 1.69%;
+    height: 4.26%;
+    border-radius: 999px;
+    border: 0.08vw solid var(--dark);
+    z-index: 5;
+}
+
+.game2__capsule--static {
+    z-index: 3;
+}
+
+.game2__capsule--draggable {
+    cursor: grab;
+}
+
+.game2__capsule--draggable.dragging {
+    cursor: grabbing;
+    z-index: 20;
+}
+
+.game2__capsule--draggable.placed {
+    pointer-events: none;
+    cursor: default;
+}
+
+.game2__capsule--pink {
+    background-color: var(--pink);
+}
+
+.game2__capsule--yellow {
+    background-color: var(--yellow);
+}
+
+.game2__capsule--pinkdot {
+    background-color: var(--pink);
+}
+
+.game2__capsule--pinkdot::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 48%;
+    aspect-ratio: 1;
+    background-color: var(--yellow);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.game2__success {
+    position: absolute;
+    top: 50%;
+    left: 16.60%;
+    transform: translate(-50%, -50%);
+    font-size: 4vw;
+    font-weight: 700;
+    color: var(--white);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.5s ease;
+    z-index: 15;
+}
+
+.game2__success.visible {
+    opacity: 1;
+}
+
+
+.game2__restart {
+    position: absolute;
+    top: 3%;
+    right: 3%;
+    width: 3.5%;
+    cursor: pointer;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.5s ease;
+    z-index: 15;
+}
+
+.game2__restart.visible {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.game2__restart img {
+    width: 100%;
+}

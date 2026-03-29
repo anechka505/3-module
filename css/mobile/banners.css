@@ -1,0 +1,15 @@
+@media (max-width: 780px) {
+
+    .banner__inner {
+        aspect-ratio: 362 / 76;
+    }
+
+    .banner__text {
+        font-size: 13.29vw;
+    }
+
+    .banner--1 .banner__logo {
+        height: 15.67vw;
+    }
+
+}

@@ -1,0 +1,31 @@
+@media (max-width: 780px) {
+
+    .footer {
+        padding-bottom: 11.26vw;
+    }
+
+
+    .footer__bar {
+        height: 7.71vw;
+        border-radius: 1.24vw;
+        padding: 0 3vw;
+        position: relative;
+        overflow: visible;
+    }
+
+
+    .footer__text {
+        font-size: 3.13vw;
+    }
+
+
+    .footer__text:nth-child(2) {
+        position: absolute;
+        top: calc(100% + 2.77vw);
+        left: 50%;
+        transform: translateX(-50%);
+        color: var(--pink);
+        white-space: nowrap;
+    }
+
+}

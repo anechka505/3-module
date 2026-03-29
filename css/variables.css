@@ -1,0 +1,22 @@
+
+
+:root {
+    --pink: #FF6DAC;
+    --yellow: #FFD738;
+    --cyan: #55D9FF;
+    --dark: #191919;
+    --white: #FFFFFF;
+
+    --font: 'Fira Mono', monospace;
+
+
+    --radius-big: 3.68vw;
+    --radius-mid: 3.39vw;
+    --radius-header: 2.46vw;
+    --radius-footer: 1.56vw;
+
+
+    --side-padding: 3.28%;
+
+    --section-gap: 3.91vw;
+}
